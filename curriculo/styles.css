@@ -205,7 +205,7 @@ a:hover {
     margin-bottom: 32px;
 }
 #info-section-b {
-  animation-duration: 0.4s;
+  animation-duration: 0.8s;
   animation-name: slidein;
 }
 @keyframes slidein {
