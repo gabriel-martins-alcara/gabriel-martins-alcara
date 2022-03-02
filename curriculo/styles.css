@@ -1,6 +1,8 @@
 *{
     transition: background 0.4s;
     text-rendering: optimizeLegibility;
+    font-family: 'Raleway', sans-serif;
+  font-family: 'Work Sans', sans-serif;
 }
 h1{
     font-size: 1.2rem;
@@ -28,19 +30,16 @@ h4{
 }
 .sub-title{
     font-size: 18px;
-    background-color: #abfd0a4d;
-    padding: 5px;
     font-weight: 600;
 }
 p{
     margin-top: 0;
     margin-bottom: 1rem;
-    padding: 10px;
+    padding: 15px;
 }
 .sub-title-dark{
     font-size: 18px;
     background-color: rgb(32, 33, 36);
-    padding: 2px
 }
 h6 {
     font-size: 14px;
@@ -173,27 +172,26 @@ a:hover {
 .personal-info{
     padding: 15px;
     background-color: #232f3e;
-    height:  200vh;
+    min-height: 100vh;
 
 }
 .personal-info-dark{
     padding: 15px;
     background-color: rgb(32, 33, 36);
-    height:  200vh;
     color: #dddddd;
-
+    min-height: 100vh;
 }
 .about{
     padding: 15px;
     background-color: #fafafa;
-    height:  200vh;
     color: #232f3e;
+    min-height: 100vh;
 }
 .about-dark{
     padding: 15px;
     background-color: rgb(53, 54, 58);
-    height:  200vh;
     color: #dddddd;
+    min-height: 100vh;
 }
 .contato{
     padding: 15px;
@@ -205,7 +203,7 @@ a:hover {
     margin-bottom: 32px;
 }
 #info-section-b {
-  animation-duration: 0.4s;
+  animation-duration: 1.2s;
   animation-name: slidein;
 }
 @keyframes slidein {
