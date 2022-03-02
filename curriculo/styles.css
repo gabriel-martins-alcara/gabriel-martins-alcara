@@ -159,8 +159,8 @@ a:hover {
     font-size: 14px;
     color: #dddddd;
 }
-.icon-container{
-    padding-top: 32px;
+.icon-container {
+    padding-bottom: 32px;
     display: flex;
     justify-content: space-around;
 }
@@ -205,7 +205,7 @@ a:hover {
     margin-bottom: 32px;
 }
 #info-section-b {
-  animation-duration: 0.8s;
+  animation-duration: 0.4s;
   animation-name: slidein;
 }
 @keyframes slidein {
@@ -234,5 +234,5 @@ a:hover {
     background-color: #dddddd;
     border-radius: 20px;
     margin-left: 6px;
-  }
+}
 }
