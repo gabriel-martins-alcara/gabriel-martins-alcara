@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="pt-br" class="ligth-mode">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>currículo Gabriel</title>
+    <script src="index.js"></script>
+</head>
+<body>
+    <section class="switch-section" style="z-index: 1;">
+        <div id="switchBackground" class="container-fluid">
+            <div class="row">
+                <div class="col-12" style="text-align: left;">
+    
+                    <!-- switch-btn -->
+                    <div id="switchbtn" class="switch__container">
+                        <h4 class="switch-desc">Dark-mode</h4>
+                        <input onclick="change()" id="switch-shadow" class="switch switch--shadow" type="checkbox">
+                        <label for="switch-shadow"></label>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </section>
+    
+    <section style="z-index: 0;">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div id="info-section-a" class="col-5 col-lg-3 personal-info">
+                    <div class="myPhoto">
+                        <img width="100%" style="border-radius: 50%;" src="https://thumbs.dreamstime.com/b/default-avatar-profile-icon-social-media-user-vector-image-icon-default-avatar-profile-icon-social-media-user-vector-image-209162840.jpg">
+                    </div>
+                    <div class="contato">
+                        <h2>
+                            CONTATO
+                        </h2>
+                        <div class="icon-container">
+                            <a class="space" href="https://api.whatsapp.com/send?phone=5511978302176&amp;text=Ol%C3%A1%20Gabriel!" rel="noreferrer" target="_blank">
+                                <img width="32px" src="https://cdn-icons-png.flaticon.com/512/220/220236.png"/>
+                            </a>
+                            <a class="space" href="tel:+5511978302176">
+                                <img width="32px" src="https://cdn-icons-png.flaticon.com/512/552/552489.png"/>
+                            </a>
+                            <a class="space" href="mailto: gabrielmartinsalcaralol@gmail.com">
+                                <img width="32px" src="https://cdn-icons-png.flaticon.com/512/732/732200.png"/>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="my-info">
+                        <h2>
+                            Nacionalidade:
+                        </h2>
+                        <h4>
+                            Brasileiro.
+                        </h4>
+
+                        
+                        <h2>
+                            Estado civil:
+                        </h2>
+                        <h4>
+                            Solteiro.
+                        </h4>
+
+
+                        <h2>
+                            Cidade:
+                        </h2>
+                        <h4>
+                            SP / São Paulo.
+                        </h4>
+
+
+                        <h2>
+                            Bairro:
+                        </h2>
+                        <h4>
+                            Vila dalila.
+                        </h4>
+
+
+                        <h2>
+                            Idade:
+                        </h2>
+                        <script>
+                            window.onload=function(){
+                                const data = new Date();
+                                const ano = data.getFullYear();       // 4 dígitos
+                                const anoNascimento = 2002;
+                                const idadeElem = document.getElementById('idade');
+                                
+                                var idade = ano - anoNascimento;
+                                var month = data.getMonth();
+                                if (month < 7) {
+                                    var idade = idade - 1;
+                                }
+                                console.log(idade)
+                                idadeElem.innerText=`${idade} anos.`
+                            }
+                        </script>
+                        <h4 id="idade"></h4>
+                    </div>
+                </div>
+                <div id="info-section-b" class="col-7 col-lg-9 about">
+                    <!--nome-->
+                    <h1>Gabriel Martins Alcará</h1>
+
+                    <div class="line"></div>
+                    <span class="sub-title">
+                        Objetivo
+                    </span>
+                    <p>
+                        * Estagio na area de tecnologia./ primeiro emprego.
+                    </p>
+
+
+
+                    <span class="sub-title">
+                        Resumo profissional
+                    </span>
+                    <p>
+                        * Sem experiência.
+                    </p>
+
+
+
+                    <span class="sub-title">
+                        Formação acadêmica
+                    </span>
+                    <p>
+                        * Ensino Fundamental concluído no colégio da policia militar.<br><br>
+                        * Ensino Médio completo no São josé de vila matilde.<br><br>
+                        * Curso mastering python fiap.<br><br>
+                        * Primeiro semestre Defesa Cibernetica Fiap.
+                    </p>
+
+                    <span class="sub-title">
+                        Idioma
+                    </span>
+                    <p>
+                        * Inglês em aperfeiçoamento.
+                    </p>
+
+
+
+                    <span class="sub-title">
+                        Informações complementares
+                    </span>
+                    <p>
+                        * Gosto muito de aprender coisas novas<br><br>
+                        * Este currículo foi feito interiramente por mim usando HTML, CSS, JS.
+                    </p>
+                </div>
+            </div>
+        </div>    
+    </section>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

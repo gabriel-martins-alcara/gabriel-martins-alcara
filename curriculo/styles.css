@@ -1,0 +1,205 @@
+*{
+    transition: background 0.4s;
+    text-rendering: optimizeLegibility;
+}
+h1{
+    font-size: 1.2rem;
+}
+h2{
+    text-align: left;
+    font-weight: 600;
+    font-size: 1.0rem;
+    color: #fafafa;
+}
+h3{
+    text-align: left;
+    font-weight: 100;
+    font-size: 14px;
+    color: #fafafa;
+    display: list-item;
+    text-decoration: underline;
+}
+h4{
+    text-align: left;
+    font-weight: 100;
+    font-size: 14px;
+    color: #fafafa;
+    text-indent: 8px;
+}
+.sub-title{
+    font-size: 18px;
+    background-color: #abfd0a4d;
+    padding: 5px;
+    font-weight: 600;
+}
+p{
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding: 10px;
+}
+.sub-title-dark{
+    font-size: 18px;
+    background-color: rgb(32, 33, 36);
+    padding: 2px
+}
+h6 {
+    font-size: 14px;
+    color: rgb(126, 124, 124);
+    padding: 2px;
+}
+.light-mode {
+  background-color: #fafafa;
+  color: #555;
+}
+a {
+  color: #222;
+}
+a:hover {
+  color: #ec5840;
+}
+.dark-mode {
+    background-color: rgb(53, 54, 58);
+    color: #899095;
+    transition: all 0.4s;
+}
+.dark-mode a {
+  color: #dee2e6;
+}
+.dark-mode a:hover {
+  color: #3cc368;
+}
+/* Estilo iOS */
+.switch-section{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.switchDarkBackground{
+    background-color: transparent;
+    transition: all 0.4s;
+    color: #dddddd;
+}
+.switch__container {
+    margin: 15px auto;
+    right: 15px;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+.switch {
+  visibility: hidden;
+  position: absolute;
+}
+.switch + label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  user-select: none;
+}
+.switch--shadow + label {
+  padding: 2px;
+  width: 44px;
+  height: 20px;
+  background-color: #dddddd;
+  border-radius: 20px;
+}
+.switch--shadow + label:before,
+.switch--shadow + label:after {
+  display: block;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  content: "";
+}
+.switch--shadow + label:before {
+  right: 1px;
+  background-color: #f1f1f1;
+  border-radius: 60px;
+  transition: background 0.4s;
+}
+.switch--shadow + label:after {
+  width: 20px;
+  background-color: #fff;
+  border-radius: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+.switch--shadow:checked + label:before {
+    background-color: #c28ce1;
+    box-shadow: inset 2px 2px 4px 2px #0000ff40
+}
+.switch--shadow:checked + label:after {
+  transform: translateX(22px);
+}
+/* Estilo Flat */
+.switch--flat + label {
+  padding: 2px;
+  width: 120px;
+  height: 60px;
+  background-color: #dddddd;
+  border-radius: 60px;
+  transition: background 0.4s;
+}
+.switch--flat + label:before,
+.switch--flat + label:after {
+  display: block;
+  position: absolute;
+  content: "";
+}
+.switch-desc {
+    padding: 0 15px 0 0;
+    font-weight: lighter;
+    font-size: 14px;
+}
+.switch-desc-dark {
+    padding: 0 15px 0 0;
+    font-weight: lighter;
+    font-size: 14px;
+    color: #dddddd;
+}
+.icon-container{
+    padding-top: 32px;
+    display: flex;
+    justify-content: space-around;
+}
+.space{
+    padding:5px;
+}
+
+
+.personal-info{
+    padding: 15px;
+    background-color: #232f3e;
+    height:  200vh;
+
+}
+.personal-info-dark{
+    padding: 15px;
+    background-color: rgb(32, 33, 36);
+    height:  200vh;
+    color: #dddddd;
+
+}
+.about{
+    padding: 15px;
+    background-color: #fafafa;
+    height:  200vh;
+    color: #232f3e;
+}
+.about-dark{
+    padding: 15px;
+    background-color: rgb(53, 54, 58);
+    height:  200vh;
+    color: #dddddd;
+}
+.contato{
+    padding: 15px;
+}
+.line{
+    width: 44px;
+    height: 3px;
+    background-color: #232f3eaf;
+    margin-bottom: 32px;
+}
